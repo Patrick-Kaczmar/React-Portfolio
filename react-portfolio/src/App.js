@@ -1,10 +1,13 @@
 import React from "react";
+import Header from "./components/header/header.js";
+import Project from "./components/project/project.js"
 
 function App() {
   return (
-    <header>
-      <h1>this a thing yep</h1>
-    </header>
+    <>
+    <Header/>
+    <Project/>
+    </>
   )
 }
 
