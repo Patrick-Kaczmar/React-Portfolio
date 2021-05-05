@@ -1,9 +1,28 @@
 .card{
     width: 22rem;
-    height: 450px;
-    margin: 20px;
+    height: 46rem;
+    margin: 20px 20px 20px 0;
 }
 
 .container{
     margin-top: 60px;
+}
+
+img{
+    height: 250px;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+}
+
+h5{
+    text-align: center;
+    text-decoration: underline;
 }
