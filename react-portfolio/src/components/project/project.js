@@ -66,15 +66,15 @@ function Project() {
                     <div key={project.title} className="col col-sm-12 col-md-6 col-xl-4">
                         <div className="card">
                             <img src={project.image} className="card-img-top" alt="Project" />
-                            <div className="card-body">
+                            <div className="card-body text-white bg-info">
                                 <h3 className="card-title">{project.title}</h3>
                                 <p className="card-text">{project.desc}</p>
                             </div>
-                            <ul className="list-group list-group-flush">
+                            <ul className="list-group list-group-flush text-white bg-secondary">
                                 <h5>Technology's used</h5>
-                                {project.tech.map(technology => <li>( {technology} )</li>)}
+                                {project.tech.map(technology => <li key={Math.floor(Math.random() * 100000)}>( {technology} )</li>)}
                             </ul>
-                            <div className="card-body">
+                            <div className="card-body bg-dark">
                                 <a href={project.gitLink} className="card-link" style={{marginRight: "35%"}}>Github link</a>
                                 <a href={project.hostLink} className="card-link">Active link</a>
                             </div>

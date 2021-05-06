@@ -1,0 +1,21 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+footer p{
+    margin-top: 10px;
+}
+
+.inLine {
+    display: inline-flex;
+}
+
+#copyRight {
+    margin: 0 20%;
+}
+

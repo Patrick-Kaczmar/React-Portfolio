@@ -10,21 +10,14 @@ function Header() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">
-                    <li className="nav-item active">
+                    <li className="nav-item">
                         <a className="nav-link" href="https://github.com/">GitHub <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="https://www.linkedin.com/in/patrick-kaczmar-17b9701b8/">Linkden</a>
                     </li>
-                    <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Project list
-                        </a>
-                        <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a className="dropdown-item" href="https://github.com/">Action</a></li>
-                            <li><a className="dropdown-item" href="https://github.com/">Another action</a></li>
-                            <li><a className="dropdown-item" href="https://github.com/">Something else here</a></li>
-                        </ul>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/">About Me</a>
                     </li>
                 </ul>
             </div>
