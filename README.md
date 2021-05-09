@@ -6,7 +6,7 @@ This is my portfolio made to showcase all of the software, projects and code I h
 
 ## link to active portfolio website - https://patrick-kaczmar.github.io/React-Portfolio/#/
 
-![website-preview](assets/Portfolio.png)
+![website-preview](./react-portfolio/src/assets/react-portfolio.png)
 
 ## License
 MIT License - Copyright 2021 Patrick-Kaczmar
