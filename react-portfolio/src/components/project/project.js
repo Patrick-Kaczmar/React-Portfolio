@@ -5,7 +5,9 @@ import budgetTrackerImg from "../../assets/budget-tracker.png";
 import workoutStats from "../../assets/workout-stats.png";
 import pathFinder from "../../assets/path-finder.png";
 import trackerDemo from "../../assets/Employee-tracker-demo.gif";
-import workdayDemo from "../../assets/workday-demo.png"
+import workdayDemo from "../../assets/workday-demo.png";
+import Particles from 'react-particles-js';
+import ParticlesConfig from "../../components/particalConfig/configParticles";
 
 function Project() {
     const myProjects = [
@@ -60,27 +62,32 @@ function Project() {
     ]
 
     return (
-        <div className="container">
-            <div className="row">
-                {myProjects.map(project => (
-                    <div key={project.title} className="col col-sm-12 col-md-6 col-xl-4">
-                        <div className="card">
-                            <img src={project.image} className="card-img-top" alt="Project" />
-                            <div className="card-body text-white bg-info">
-                                <h3 className="card-title">{project.title}</h3>
-                                <p className="card-text">{project.desc}</p>
-                            </div>
-                            <ul className="list-group list-group-flush text-white bg-secondary">
-                                <h5>Technology's used</h5>
-                                {project.tech.map(technology => <li key={Math.floor(Math.random() * 100000)}>( {technology} )</li>)}
-                            </ul>
-                            <div className="card-body bg-dark">
-                                <a href={project.gitLink} className="card-link" style={{marginRight: "35%"}}>Github link</a>
-                                <a href={project.hostLink} className="card-link">Active link</a>
+        <div style={{ position: 'relative', overflow: "hidden" }}>
+            <div style={{ position: 'absolute' }}>
+                    <Particles height="100vh" width="100vw" params={ParticlesConfig} />
+                </div>
+            <div className="container" >
+                <div className="row">
+                    {myProjects.map(project => (
+                        <div key={project.title} className="col col-sm-12 col-md-6 col-xl-4">
+                            <div className="card">
+                                <img src={project.image} className="card-img-top" alt="Project" />
+                                <div className="card-body text-white bg-info">
+                                    <h3 className="card-title">{project.title}</h3>
+                                    <p className="card-text">{project.desc}</p>
+                                </div>
+                                <ul className="list-group list-group-flush text-white bg-secondary">
+                                    <h5>Technology's used</h5>
+                                    {project.tech.map(technology => <li key={Math.floor(Math.random() * 100000)}>( {technology} )</li>)}
+                                </ul>
+                                <div className="card-body bg-dark">
+                                    <a href={project.gitLink} className="card-link" style={{ marginRight: "35%" }}>Github link</a>
+                                    <a href={project.hostLink} className="card-link">Active link</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     )
