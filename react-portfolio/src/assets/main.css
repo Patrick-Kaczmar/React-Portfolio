@@ -1,4 +1,7 @@
-body{
-    background-image: url("./portfolio-background.jpg");
-    background-repeat: repeat-y;
+#particleBody{
+    background: 
+        linear-gradient(to top, rgb(255, 136, 0), transparent),
+        linear-gradient(to bottom, red, transparent);
+
+    background-blend-mode: screen;
 }

@@ -4,7 +4,7 @@ import employeeDirectoryImg from "../../assets/Employee-directory-2.png";
 import budgetTrackerImg from "../../assets/budget-tracker.png";
 import workoutStats from "../../assets/workout-stats.png";
 import pathFinder from "../../assets/path-finder.png";
-import trackerDemo from "../../assets/Employee-tracker-demo.gif";
+import aniGateDemo from "../../assets/animeProject.png";
 import workdayDemo from "../../assets/workday-demo.png";
 import Particles from 'react-particles-js';
 import ParticlesConfig from "../../components/particalConfig/configParticles";
@@ -44,10 +44,10 @@ function Project() {
             hostLink: "https://apple-shortcake-96876.herokuapp.com/",
         },
         {
-            image: trackerDemo,
-            title: "Employee Tracker",
-            desc: "This application allows the user to create and manipulate data that is used to organize company information. You are able to create departments, Roles and employee's in a structured way that will allow you to view all this data in readable format.",
-            tech: ["Javascript", "MySql", "Inquirer", "Node.js"],
+            image: aniGateDemo,
+            title: "Ani-Gate",
+            desc: "This is a full stack application built using the MERN stack. It uses the unofficial MAL API provided by JIKAN to retrieve data about anime from MyAnimeList.",
+            tech: ["Express", "HTML", "SASS", "Javascript", "Material UI", "node.js", "MongoDB", "Jikan API", "React"],
             gitLink: "https://github.com/Patrick-Kaczmar/Employee-Tracker",
             hostLink: "https://github.com/Patrick-Kaczmar/Employee-Tracker",
         },
@@ -62,10 +62,10 @@ function Project() {
     ]
 
     return (
-        <div style={{ position: 'relative', overflow: "hidden" }}>
+        <div id="particleBody" style={{ position: 'relative', overflow: "hidden" }}>
             <div style={{ position: 'absolute' }}>
-                    <Particles height="100vh" width="100vw" params={ParticlesConfig} />
-                </div>
+                    <Particles height="170vh" width="170vw" params={ParticlesConfig} />
+            </div>
             <div className="container" >
                 <div className="row">
                     {myProjects.map(project => (
