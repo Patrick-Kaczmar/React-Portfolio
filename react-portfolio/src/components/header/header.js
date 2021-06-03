@@ -16,7 +16,7 @@ function Header(props) {
                         <a className="nav-link" href="https://github.com/Patrick-Kaczmar" rel="noreferrer" target="_blank">GitHub <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="https://www.linkedin.com/in/patrick-kaczmar-17b9701b8/" rel="noreferrer" target="_blank">Linkden</a>
+                        <a className="nav-link" href="https://www.linkedin.com/in/patrick-kaczmar-17b9701b8/" rel="noreferrer" target="_blank">Linkedin</a>
                     </li>
                     <li className="nav-item">
                         <Link className={"nav-link " + (path === "/aboutme" ? "active" : "")} to="/aboutme">About me</Link>
