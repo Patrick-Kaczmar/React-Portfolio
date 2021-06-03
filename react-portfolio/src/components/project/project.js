@@ -15,7 +15,7 @@ function Project() {
             image: employeeDirectoryImg,
             title: "Employee Directory",
             desc: "This app was built using react as the front end framework to showcase the use of react components and file structure.",
-            tech: ["React", "javascript", "bootstrap", "HTML", "CSS"],
+            tech: ["React", "javascript", "bootstrap","Axios","Random user API", "HTML", "CSS"],
             gitLink: "https://github.com/Patrick-Kaczmar/Employee-Directory",
             hostLink: "https://patrick-kaczmar.github.io/Employee-Directory/",
         },
@@ -55,7 +55,7 @@ function Project() {
             image: workdayDemo,
             title: "Workday Scheduler",
             desc: "A workday Scheduler made by using the new Date function to color code the text fields based on the time of day. Also saves all the user data to local storage when a user saves the specified text field.",
-            tech: ["HTML", "CSS", "Javascript", "jQuery"],
+            tech: ["HTML", "CSS", "Javascript","Local storage", "jQuery"],
             gitLink: "https://github.com/Patrick-Kaczmar/Work-day-scheduler",
             hostLink: "https://patrick-kaczmar.github.io/Work-day-scheduler/",
         }
@@ -81,8 +81,8 @@ function Project() {
                                     {project.tech.map(technology => <li key={Math.floor(Math.random() * 100000)}>( {technology} )</li>)}
                                 </ul>
                                 <div className="card-body bg-dark">
-                                    <a href={project.gitLink} className="card-link" style={{ marginRight: "35%" }}>Github link</a>
-                                    <a href={project.hostLink} className="card-link">Active link</a>
+                                    <a className="btn btn-primary card-link" style={{ marginRight: "5%", marginLeft: "10%" }} href={project.gitLink} role="button">Github link</a>
+                                    <a className="btn btn-primary card-link"  href={project.hostLink} role="button">Active link</a>
                                 </div>
                             </div>
                         </div>
