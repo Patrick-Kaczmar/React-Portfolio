@@ -4,6 +4,8 @@ This is my portfolio made to showcase all of the software, projects and code I h
 
 ## Bootstrap's Navbar framework - https://getbootstrap.com/docs/5.0/components/navbar/
 
+## Interactive Background - https://vincentgarreau.com/particles.js/
+
 ## link to active portfolio website - https://patrick-kaczmar.github.io/React-Portfolio/#/
 
 ![website-preview](./react-portfolio/src/assets/portfolio2.png)
