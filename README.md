@@ -12,3 +12,4 @@ This is my portfolio made to showcase all of the software, projects and code I h
 
 ## License
 MIT License - Copyright 2021 Patrick-Kaczmar
+
